@@ -1,0 +1,12 @@
+* {
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Source Code Pro", monospace;
+}
+.caption {
+  font-family: var(--secondary-font);
+  font-style: italic;
+}
