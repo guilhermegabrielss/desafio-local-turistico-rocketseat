@@ -1,27 +1,33 @@
+:root {
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Source Code Pro", monospace;
+
+  --primary-color: #1b1b1b;
+  --secondary-color: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
 
   font-family: var(--primary-font);
+  font-size: 62.5%;
 
   background-color: #f5f4f0;
-
-  font-size: 62.5%;
-}
-
-:root {
-  --primary-font: "Merriweather", serif;
-  --secondary-font: "Source Code Pro", monospace;
 }
 
 h1 {
   font-size: 3.6rem;
   font-weight: bold;
+
+  color: var(--primary-color);
 }
 
 h2 {
   font-size: 3.2rem;
   font-weight: bold;
+
+  color: var(--primary-color);
 
   margin: 0.2rem auto 0.8rem;
 }
@@ -30,23 +36,71 @@ h3 {
   font-size: 2.8rem;
   font-weight: bold;
 
-  margin: 2.0rem auto 0.4rem;
+  color: var(--secondary-color);
+
+  margin: 2rem auto 0.4rem;
 }
 
 h4 {
   font-size: 1.6rem;
+
   color: #e1624f;
+
   margin: 64px auto 8px;
 }
 
 p {
   font-size: 1.6rem;
   font-family: var(--secondary-font);
+
+  color: var(--secondary-color);
 }
 
 hr {
-  border-color: #D9D9D9;
+  border-color: #d9d9d9;
   border-style: double;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  color: var(--secondary-color);
+}
+
+img {
+  width: 100%;
+  height: 660px;
+
+  border-radius: 28px;
+}
+
+#blue {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  color: #0c51a7;
+}
+
+#purple {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  color: #591b98;
+}
+
+#rose {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  color: #e5245e;
+}
+
+#orange {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  color: #e95e10;
 }
 
 #container {
@@ -61,10 +115,8 @@ hr {
   margin-bottom: 40px;
 }
 
-img {
-  border-radius: 28px;
-  width: 100%;
-  height: 660px;
+#container > section > h4 {
+  margin-top: 20px;
 }
 
 #caption {
@@ -74,17 +126,42 @@ img {
 
   display: flex;
   align-items: center;
-
   text-align: center;
 
   margin-top: 1.6rem;
 }
 
-#list-img {
+#card-travel > img {
+  height: 350px;
+  object-fit: cover;
+}
+
+#content-card > img {
   height: 350px;
   object-fit: cover;
 }
 
 #title-list {
   margin-bottom: 64px;
+}
+
+#card-list {
+  margin-bottom: 40px;
+}
+
+#finally-description {
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.6rem;
+
+  margin: 28px auto 48px;
+
+  color: #333333;
 }
